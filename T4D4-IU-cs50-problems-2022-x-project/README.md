@@ -1,4 +1,4 @@
-# ScreenSHot-With-Blank-Margins
+# ScreenShot-With-Blank-Margins
 #### Video Demo:  <URL:https://youtu.be/0aHgLfd9Hp8>
 #### Description(Engulish Ver)
 ######
