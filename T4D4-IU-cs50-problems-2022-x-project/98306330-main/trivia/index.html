@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+
+    <script>
+
+        function turnred(event)
+        {
+            var trigger = event.srcElement;
+            trigger.style.backgroundColor = 'red';
+            document.querySelector("#multi").innerHTML = "Incorrect!";
+        };
+
+        function turngreen(event)
+        {
+            var trigger = event.srcElement;
+            trigger.style.backgroundColor = 'green';
+            document.querySelector("#multi").innerHTML = "Correct!";
+        };
+
+        </script>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3>What is the highest?</h3>
+                <p id = "multi" > </p>
+
+                <button id="Fuji" onclick= "turnred(event);"> Mt.Fuji </button>
+                <button id="Everest" onclick="turnred(event);"> Everest </button>
+                <button id="Olympus" onclick="turngreen(event);"> Mount Olympus </button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <h3>How many prefectures are there in Japan?</h3>
+                <input autocomplete="off" autofocus placeholder="Your idea?" id = "answer" type="text">
+                <button id = "confirm"> Check Answer </button>
+                <p id = "feedback"> </p>
+
+            <script>
+                document.querySelector('#confirm').addEventListener('click', function()  {
+                    let input = document.querySelector('#answer');
+                    if (input.value === "47")  {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback').innerHTML = "Correct!"
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback').innerHTML = "Incorrect!"
+                    }
+            });
+
+            </script>
+
+            </div>
+        </div>
+    </body>
+</html>

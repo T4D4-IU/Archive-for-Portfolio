@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+{% block title %}
+    Buy
+{% endblock %}
+{% block main %}
+    <form method="post">
+
+        <div class="mb-3">
+            <h3>
+                You Bought {{shares}} {{symbol}} Stocks For Total {{ price | usd }} ({{ pricee | usd }} each )
+            </h3>
+            <h3>
+                Your remain {{ userCash | usd }}
+            </h3>
+        </div>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+<form  method="post">
+    <div class="mb-3">
+        <select name="symbol">
+            {% for symbol in symbols %}
+                <option value="{{ symbol }}">{{ symbol }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</form>
+<form  method="post">
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" autofocus type="number" name="shares" placeholder="shares" min="0">
+    </div>
+    <button class="btn btn-primary" type="submit">Sell</button>
+</form>
+{% endblock %}

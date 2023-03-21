@@ -1,0 +1,23 @@
+h1 {
+    color:#f00;
+}
+
+.backtotop{
+    color:#fff;
+    background-color:#000;
+    font-size:400;
+    font-weight:400;
+}
+
+button,input[type="submit"]{
+    background-color:#dddddd;
+    border:2px solid transparent;
+    font-size:1.5;
+    font-weight:450;
+    line-height:2;
+    text-align:left;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#section {
+    text-align:left;
+}
